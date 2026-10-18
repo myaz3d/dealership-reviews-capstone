@@ -1,7 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Best Cars Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -12,10 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
@@ -25,44 +34,65 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+  <div class="card shadow-sm" style="width: 85%; margin: auto; margin-top: 3%;">
+    <div class="banner text-center p-4 bg-light rounded" name="about-header">
+      <h2 class="fw-bold text-dark">Welcome to Best Cars Dealership</h2>
+      <p class="lead text-secondary mt-2">
+        Best Cars Dealership is a premier national automotive retailer with state-of-the-art dealerships nationwide. 
+        We are dedicated to providing an unmatched vehicle purchasing experience, transparent customer ratings, and comprehensive car inventory insights powered by cutting-edge cloud technologies.
+      </p>
+    </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+    <div class="container my-4">
+      <div class="row g-4 justify-content-center">
+        <!-- Person 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 text-center p-3">
+            <img class="card-img-top rounded-circle mx-auto mt-2" src="/static/person.png" alt="Sarah Jenkins" style="width: 140px; height: 140px; object-fit: cover; background: #f0f4f8;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-dark mb-1">Sarah Jenkins</h5>
+              <p class="text-primary fw-semibold mb-2">Chief Executive Officer</p>
+              <p class="card-text text-muted small">
+                With over 18 years of executive leadership in national auto retail, Sarah spearheads dealership growth, nationwide branch expansion, and customer-first digital innovation.
+              </p>
+              <a href="mailto:sarah.jenkins@bestcarsdealership.com" class="btn btn-outline-info btn-sm mt-2">sarah.jenkins@bestcarsdealership.com</a>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <!-- Person 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 text-center p-3">
+            <img class="card-img-top rounded-circle mx-auto mt-2" src="/static/person.png" alt="Marcus Chen" style="width: 140px; height: 140px; object-fit: cover; background: #f0f4f8;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-dark mb-1">Marcus Chen</h5>
+              <p class="text-primary fw-semibold mb-2">Chief Technology Officer</p>
+              <p class="card-text text-muted small">
+                Marcus leads our cloud-native software engineering teams, overseeing Kubernetes microservice deployments, real-time telemetry, and AI sentiment analysis systems.
+              </p>
+              <a href="mailto:marcus.chen@bestcarsdealership.com" class="btn btn-outline-info btn-sm mt-2">marcus.chen@bestcarsdealership.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 text-center p-3">
+            <img class="card-img-top rounded-circle mx-auto mt-2" src="/static/person.png" alt="Elena Rodriguez" style="width: 140px; height: 140px; object-fit: cover; background: #f0f4f8;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-dark mb-1">Elena Rodriguez</h5>
+              <p class="text-primary fw-semibold mb-2">VP of Customer Experience</p>
+              <p class="card-text text-muted small">
+                Elena champions buyer satisfaction across all nationwide franchises, curating authentic dealer review transparency and ensuring excellence throughout every vehicle handover.
+              </p>
+              <a href="mailto:elena.rodriguez@bestcarsdealership.com" class="btn btn-outline-info btn-sm mt-2">elena.rodriguez@bestcarsdealership.com</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
